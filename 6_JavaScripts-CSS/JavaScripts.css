@@ -1,0 +1,136 @@
+.navbar{ 
+    display: flex;
+    background-color:palevioletred; 
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.nav1{
+    text-decoration: none;
+    color: darkmagenta;
+    font-size: 24px;
+}
+.container{
+    height: 90vh;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 100px;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(0,1fr);
+    grid-template-areas:
+    "Introduction Introduction Data-Types Functions Functions "
+    "Arrays OOP Data-Types Control-Flow Control-Flow"
+    "Arrays OOP Async DOM Frameworks "
+    "Error  Error Async DOM Frameworks ";
+}
+
+@media screen and (max-width:1300px){
+    .container{
+        width: 65vh;
+        height: 90vh;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        margin-bottom: 100px;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(0,1fr);
+        grid-template-areas:
+        "Introduction Data-Types"
+        "Control-Flow Functions"
+        "Arrays OOP"
+        "Async DOM"
+        "Frameworks Error";
+
+    }
+}
+@media screen and (max-width:900px){
+    .container{
+        width: 50vh;
+        height: 90vh;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        margin-bottom: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(0,1fr);
+        grid-template-areas: 
+        "Introduction"
+        "Data-Types"
+        "Control-Flow "
+        "Functions"
+        "Arrays "
+        "OOP"
+        "Async"
+        "DOM"
+        "Frameworks "
+        "Error";
+    }
+}
+h3{
+    text-align: center;
+    font-size: 28px;
+}
+.Introduction{
+    grid-area: Introduction;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Data-Types{
+    grid-area: Data-Types;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Control-Flow{
+    grid-area: Control-Flow;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Functions{
+    grid-area: Functions;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Arrays{
+    grid-area: Arrays;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.OOP{
+    grid-area: OOP;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Async{
+    grid-area: Async;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.DOM{
+    grid-area: DOM;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Frameworks{
+    grid-area: Frameworks;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Error{
+    grid-area: Error;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.box{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: 2px thin solid;
+    padding: 10px;
+}

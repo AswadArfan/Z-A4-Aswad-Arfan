@@ -1,0 +1,170 @@
+
+.navbar{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:palevioletred; 
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.nav1{
+    text-decoration: none;
+    color: darkmagenta;
+    font-size: 24px;
+}
+.container{
+    height: 1000px;
+    width:1000px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas:
+    "HTML Data-Analytics C"
+    "HTML-CSS Python JavaScripts"
+    "Footer Footer Footer";
+    margin-bottom: 40px;
+    position: relative;
+}
+@media screen and (max-width: 1500px){
+    .container{
+        height: 90%;
+        width: 50vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "HTML"
+        "Data-Analytics"
+        "C"
+        "HTML-CSS"
+        "Python"
+        "JavaScripts"
+        "Footer";
+        justify-content: space-evenly;
+        align-items: center;
+        grid-gap: 10px;
+
+    }
+    .footer{
+        grid-template-areas: Footer;
+
+    }
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+}
+.all-links{
+    text-decoration: none;
+    color: black;
+}
+.box{
+    border: thin solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 2px 20px;
+    transition: 1s;
+}
+.box:hover{
+    transform: scale(1.06);
+}
+img{
+    width: 325px;
+    height: 225px;
+}
+.fonts{
+    font-size: 26px;
+    color: darkmagenta;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+.para-fonts{
+    font-size: 22px;
+    padding: 5px;
+}
+.HTML{
+    grid-area: HTML;
+}
+.Data-Analytics{
+    grid-area: Data-Analytics;
+}
+.C{
+    grid-area: C;
+}
+.HTML-CSS{
+    grid-area: HTML-CSS;
+}
+.Python{
+    grid-area: Python;
+}
+.JavaScripts{
+    grid-area: JavaScripts;
+}
+
+.footer{
+    height: 200px;
+    width: 70vw;
+    margin: auto;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    "One Two Three";
+    display: flex;
+    flex-wrap:  column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.links{
+    grid-template-areas: one;    
+}
+.foot-links{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.foot-main{
+    grid-template-areas: two;
+    border: 1px;
+    margin-top: -80px;
+}
+.quick-links{
+    font-size: 22px;
+}
+.foot{
+    text-align: center;
+    text-decoration: none;
+    margin-right: 9px;
+}
+.email{
+    text-decoration: none;
+    color: black;
+}
+.foot-end{
+    grid-template-areas: three;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;
+}

@@ -1,0 +1,81 @@
+.navbar{ 
+    display: flex;
+    background-color:palevioletred; 
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.nav1{
+    text-decoration: none;
+    color: darkmagenta;
+    font-size: 24px;
+}
+.container{
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    background-color:cornsilk;
+    border-radius: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "Fee1"
+    "Fee2"
+    "Fee3"
+    "Fee4"
+    "Fee5"
+    "Fee6"
+    "footer";
+}
+.Course-Fees{
+    margin-top: 50px;
+    text-align: center;
+    font-family:Gabriola;
+    font-size: 36px;
+}
+.Fee1{
+    grid-area: Fee1;
+    background-color: lightcoral;
+    margin-top: 10px;
+}
+.Fee2{
+    grid-area: Fee2;
+    background-color: lightcyan;
+}
+.Fee3{
+    grid-area: Fee3;
+    background-color: lightgreen;
+}
+.Fee4{
+    grid-area: Fee4;
+    background-color: lightpink;
+}
+.Fee5{
+    grid-area: Fee5;
+    background-color:lightgrey;
+}
+.Fee6{
+    grid-area: Fee6;
+    background-color:lightskyblue;
+    margin-bottom: 10px;
+}
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+
+
+  

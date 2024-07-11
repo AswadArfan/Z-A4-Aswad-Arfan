@@ -1,0 +1,176 @@
+.navbar{ 
+    display: flex;
+    background-color:palevioletred; 
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.nav1{
+    text-decoration: none;
+    color: darkmagenta;
+    font-size: 24px;
+}
+.container{
+    height: 90vh;
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(0,1fr);
+    grid-template-areas:
+    "Introduction Introduction Introduction"
+    "Data-Variables Control-flow Control-flow"
+    "Data-Variables memory memory"
+    "File-handling Modularity Pointer-array"
+    "advanced advanced advanced";
+}
+
+@media screen and (max-width:1200px){
+    .container{
+        width: 65vh;
+        height: 90vh;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        margin-bottom: 100px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "Introduction Data-Variables"
+        "Control-flow Data-Variables"
+        "Control-flow memory"
+        "File-handling  Modularity"
+        "File-handling Pointer-array"
+        "advanced Pointer-array";
+
+    }
+}
+@media screen and (max-width:900px){
+    .container{
+        width: 65vh;
+        height: 90vh;
+        display: grid;
+        grid-gap: 20px;
+        margin-bottom: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,1fr);
+        margin: auto;
+        grid-template-areas: 
+        "Introduction"
+        "Data-Variables"
+        "Control-flow"
+        "memory"
+        "File-handling"
+        "Modularity"
+        "Pointer-array"
+        "advanced";
+    }
+}
+h3{
+    text-align: center;
+    font-size: 28px;
+}
+.Introduction{
+    grid-area: Introduction;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Data-Variables{
+    grid-area: Data-Variables;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Control-flow{
+    grid-area: Control-flow;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.memory{
+    grid-area: memory;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.File-handling{
+    grid-area: File-handling;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Modularity{
+    grid-area: Modularity;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Pointer-array{
+    grid-area: Pointer-array;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.advanced{
+    grid-area: advanced;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.box{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: 2px thin solid;
+    padding: 10px;
+}
+.footer{
+    height: 200px;
+    width: 70vw;
+    margin: auto;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    "One Two Three";
+    display: flex;
+    flex-wrap:  column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.links{
+    grid-template-areas: one;    
+}
+.foot-links{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.foot-main{
+    grid-template-areas: two;
+    border: 1px;
+    margin-top: -80px;
+}
+.quick-links{
+    font-size: 22px;
+}
+.foot{
+    text-align: center;
+    text-decoration: none;
+    margin-right: 9px;
+}
+.email{
+    text-decoration: none;
+    color: black;
+}
+.foot-end{
+    grid-template-areas: three;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;
+}

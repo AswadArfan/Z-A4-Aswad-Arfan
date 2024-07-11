@@ -1,0 +1,164 @@
+.navbar{ 
+    display: flex;
+    background-color:palevioletred; 
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.nav1{
+    text-decoration: none;
+    color: darkmagenta;
+    font-size: 24px;
+}
+.container{
+    height: 60vh;
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "Descriptive Predictive Prespective Diagnostic Text-Sent Network"
+    "Real-time Real-time Real-time Real-time Real-time Real-time ";
+}
+
+@media screen and (max-width:1600px){
+    .container{
+        width: 65vh;
+        height: 90vh;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "Descriptive Descriptive"
+        "Predictive Prespective"
+        "Predictive Diagnostic"
+        "Text-Sent  Diagnostic"
+        "Network Real-time";
+
+    }
+}
+@media screen and (max-width:900px){
+    .container{
+        width: 65vh;
+        height: 90vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,1fr);
+        margin: auto;
+        grid-template-areas: 
+        "Descriptive"
+        "Predictive"
+        "Prespective"
+        "Diagnostic"
+        "Text-Sent"
+        "Network"
+        "Real-time";
+    }
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+.Descriptive{
+    grid-area: Descriptive;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Predictive{
+    grid-area: Predictive;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Prespective{
+    grid-area: Prespective;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Diagnostic{
+    grid-area: Diagnostic;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Text-Sent{
+    grid-area: Text-Sent;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Network{
+    grid-area: Network;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Forms{
+    grid-area: Forms;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.Real-time{
+    grid-area: Real-time;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 10px;
+}
+.box{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: 2px thin solid;
+    padding: 10px;
+}
+.footer{
+    height: 200px;
+    width: 70vw;
+    margin: auto;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    "One Two Three";
+    display: flex;
+    flex-wrap:  column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.links{
+    grid-template-areas: one;    
+}
+.foot-links{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.foot-main{
+    grid-template-areas: two;
+    border: 1px;
+    margin-top: -80px;
+}
+.quick-links{
+    font-size: 22px;
+}
+.foot{
+    text-align: center;
+    text-decoration: none;
+    margin-right: 9px;
+}
+.email{
+    text-decoration: none;
+    color: black;
+}
+.foot-end{
+    grid-template-areas: three;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;
+}

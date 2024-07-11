@@ -1,0 +1,61 @@
+.navbar{ 
+    display: flex;
+    background-color:palevioletred; 
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.nav1{
+    text-decoration: none;
+    color: darkmagenta;
+    font-size: 24px;
+}
+.email{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+    padding: 10px;
+    grid-template-columns:repeat(0,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "links con con con";
+    background-color: whitesmoke;
+}
+.contact{
+    grid-template-areas: con;
+    text-align: center;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.links{
+    margin: auto;
+    grid-template-areas: links;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    flex-wrap: wrap;
+
+}
+a{margin-bottom: 20px;
+    text-decoration: none;
+}
+.con{
+    margin-bottom: 40px;
+}
